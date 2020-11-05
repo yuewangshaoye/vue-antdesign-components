@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Table from '@/components/Table/index'
 import Button from '@/components/Button/index'
 import Function from '@/components/Function/index'
+import Lodash  from '@/components/Lodash/index'
 
 Vue.use(Router)
 
@@ -23,6 +24,11 @@ export default new Router({
       path: '/Function',
       name: 'Function',
       component: Function
+    },
+    {
+      path: '/Lodash',
+      name: 'Lodash',
+      component: Lodash
     }
   ]
 });
