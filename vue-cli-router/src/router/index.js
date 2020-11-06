@@ -4,6 +4,8 @@ import Table from '@/components/Table/index'
 import Button from '@/components/Button/index'
 import Function from '@/components/Function/index'
 import Lodash  from '@/components/Lodash/index'
+import Table_1 from '@/components/Table/index_1'
+
 
 Vue.use(Router)
 
@@ -29,7 +31,12 @@ export default new Router({
       path: '/Lodash',
       name: 'Lodash',
       component: Lodash
-    }
+    },
+    {
+      path: '/Table_1',
+      name: 'Table_1',
+      component: Table_1
+    },
   ]
 });
 const originalPush = Router.prototype.push;

@@ -1,4 +1,7 @@
 <template>
+<!-- 
+  演示插槽slot如何使用的表格示例
+ -->
   <a-table :columns="columns" :data-source="data">
     <a slot="name" slot-scope="text" @click="click(text)">
       <a-icon type="pause-circle" />
