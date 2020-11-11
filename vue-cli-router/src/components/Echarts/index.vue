@@ -1,10 +1,10 @@
 <template>
-<!-- 安装不上echarts插件
+<!-- 安装不上echarts插件:是less没安装的问题
     这是一个基础结构的数据柱形图·
     修改相应的option选项即可
  -->
   <div id="main" style="width: 600px; height: 400px"></div>
-</template>ge
+</template>
 <script>
 import echarts from "echarts";
 export default {
@@ -40,11 +40,6 @@ export default {
   },
 };
 </script>
-<style lang="less" scoped>
-.bg {
-  img {
-    width: 100%;
-    height: 100%;
-  }
-}
+<style  scoped>
+
 </style>

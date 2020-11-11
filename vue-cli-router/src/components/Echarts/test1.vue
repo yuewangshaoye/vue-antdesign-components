@@ -1,3 +1,5 @@
+// 修正昨天的Echarts报错，因为没有安装less引起
+// 这是一个K线图
 <template>
   <div id="main" class="bottom"></div>
 </template>
@@ -166,11 +168,9 @@ var option = {
   },
 }
 </script>
-<style lang="less" scoped>
+<style  scoped>
 .bottom {
- 
     width: 100%;
     height: 400px;
- 
 }
 </style>

@@ -5,13 +5,15 @@ import Button from '@/components/Button/index'
 import Function from '@/components/Function/index'
 import Lodash  from '@/components/Lodash/index'
 import Table_1 from '@/components/Table/index_1'
-import Echarts from '@/components/Echarts/index'
+import Echarts from '@/components/Echarts/index.vue'
+import EchartsK from '@/components/Echarts/test1'
+
 
 
 Vue.use(Router)
 
 export default new Router({
-  mode:'hash',
+  mode:'history',//history路径不带#，hash带#
   routes: [
     {
       path: '/Table',
@@ -42,6 +44,11 @@ export default new Router({
       path: '/Echarts',
       name: 'Echarts',
       component: Echarts
+    },
+    {
+      path: '/EchartsK',
+      name: 'EchartsK',
+      component: EchartsK
     },
   ]
 });
