@@ -7,7 +7,7 @@ import Lodash  from '@/components/Lodash/index'
 import Table_1 from '@/components/Table/index_1'
 import Echarts from '@/components/Echarts/index.vue'
 import EchartsK from '@/components/Echarts/test1'
-
+import Count from '@/components/Count/index'
 
 
 Vue.use(Router)
@@ -49,6 +49,11 @@ export default new Router({
       path: '/EchartsK',
       name: 'EchartsK',
       component: EchartsK
+    },
+    {
+      path: '/Count',
+      name: 'Count',
+      component: Count
     },
   ]
 });

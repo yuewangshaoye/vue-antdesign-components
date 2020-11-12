@@ -9,7 +9,7 @@ module.exports = {
 
     // Paths
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: '/', //放服务器上加 ./ 变为绝对路径
     proxyTable: {},
 
     // Various Dev Server settings
