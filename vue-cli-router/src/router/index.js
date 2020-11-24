@@ -8,6 +8,7 @@ import Table_1 from '@/components/Table/index_1'
 import Echarts from '@/components/Echarts/index.vue'
 import EchartsK from '@/components/Echarts/test1'
 import Count from '@/components/Count/index'
+import Slot from '@/components/Slot/index'
 
 
 Vue.use(Router)
@@ -54,6 +55,11 @@ export default new Router({
       path: '/Count',
       name: 'Count',
       component: Count
+    },
+    {
+      path: '/Slot',
+      name: 'Slot',
+      component: Slot
     },
   ]
 });

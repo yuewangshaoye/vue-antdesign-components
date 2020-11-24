@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../../js/jquery-1.8.3.min.js"></script>
+    <title>Document</title>
+    <style type="text/css">
+        div {
+            margin: 0;
+            padding: 0;
+        }
+
+        #mask {
+            width: 80%;
+            height: 200px;
+            /* height: max-content; */
+            background: #dddddd;
+            margin: 0 auto;
+            border-radius: 7px;
+            word-break: break-all;
+            overflow: hidden;
+        }
+
+        #zhe_zhao {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 弹窗 -->
+    <div id="zhe_zhao">
+        <button id="cancle">取消</button>
+    </div>
+
+    <h1>锦囊详细</h1>
+<div id="ddd" style="display: none;"><h1>
+    jjjjjj
+</h1></div>
+<div id="wen">
+    <span id='t' style="display: none;">好问题 3</span>
+    <span id="f" style="display: block;">好问题 4</span>
+</div>
+    <div>
+        <div id='mask_box'> 
+            <!-- 上部内容 -->
+            <!-- 弹窗 -->
+            <div id='mask'>
+                XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+                SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+                SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+                SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+                SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+                SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+            </div>
+        </div>
+
+        <div>下部内容</div>
+    </div>
+
+    <button id="btn_click">好问题 31 </button>
+</body>
+<script>
+    $(function () {
+        // 点击事件
+        $('#btn_click').click(function () {
+
+            //  打开遮罩
+            $('#zhe_zhao').css({
+                'display': 'block'
+            })
+        })
+        //   点击取消按钮
+        $('#cancle').click(function () {
+            console.log(' 点击按钮');
+            $('#zhe_zhao').css({
+                'display': 'none'
+            })
+            // 获取文本内容并设置样式
+            $('#mask').css({
+                'height': 'max-content'
+            })
+            // 隐藏按钮
+            $('#btn_click').css({
+                'display': 'none'
+            })
+            $('#ddd').css({
+                display:'block'
+            })
+            return false;
+        })
+        //   点击遮罩取消弹窗
+        $('#zhe_zhao').click(function () {
+            console.log(' 点击遮罩 ');
+            $('#zhe_zhao').css({
+                'display': 'none'
+            })
+            $('#mask').css({
+                'height': 'max-content'
+            })
+            // 隐藏按钮
+            $('#btn_click').css({
+                'display': 'none'
+            })
+            // $('#mask').css({
+            //     'color': 'red'
+            // })
+            $('#ddd').css({
+                display:'block'
+            })
+        })
+
+        $('#wen').click(function(){
+            console.log('dd');
+            $('#t').css({
+                display:'block'
+            })
+            $('#f').hide()
+        })
+    })
+
+</script>
+
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <script type="text/javascript" src="../../js/huansuan.js"></script>
+    <script type="text/javascript" src="../../js/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../js/jquery.min.js"><\/script>')</script>
+</head>
+
+<body>
+    <div class="main">
+        <!-- 顶部按钮 -->
+        <div class="top">
+            <div class="top_left">
+                <button>取消</button>
+            </div>
+            <div class="top_right">
+                <button class="top_right_text">提交问题</button>
+            </div>
+        </div>
+        <!-- 输入框 -->
+        <div class="text">
+            <textarea id="on_input" cols="50" rows="3" placeholder="输入问题并以问号结尾"></textarea>
+        </div>
+        <!-- 提示框 -->
+        <div class="bottom">
+            <div class="bottom_1">
+                <img src="../../img/icon-提问题-提示.png" />
+            </div>
+            <div class="bottom_text">
+                <span>请尽量保持文字简练，表达清晰</span>
+            </div>
+            <div class="bottom_2">
+                <img src="../../img/icon-提问题-关闭.png" />
+            </div>
+        </div>
+        <!-- 文本 -->
+        <div class="center" style="display: none;">
+            <div class="center_main">
+                <div class="center_top">
+                    <div class="center_top_left">
+                        作业拖拉？
+                    </div>
+                    <div class="center_top_right">
+                        已回答
+                    </div>
+                </div>
+
+                <div class="center_top">
+                    <div class="center_top_text">
+                        孩子做<span class="span">作业拖拉</span>,如何让孩子按时完成作业?
+                    </div>
+                    <div class="center_top_right">已回答</div>
+                </div>
+
+                <div class="center_top">
+                    <div class="center_top_text">
+                        孩子做<span class="span">作业</span>拖拉,如何让孩子按时完成作业孩子做作业<span class="span">拖拉</span>,如何让孩子按时完成作业
+                    </div>
+                    <div class="center_top_right">已回答</div>
+                </div>
+
+                <div class="center_top">
+                    <div class="center_top_text">
+                        孩子做<span class="span">作业拖拉</span>,如何让孩子按时完成作业?
+                    </div>
+                    <div class="center_top_right">已回答</div>
+                </div>
+
+                <div class="center_top">
+                    <div class="center_top_text">
+                        孩子做<span class="span">作业</span>拖拉,如何让孩子按时完成作业孩子做作业<span class="span">拖拉</span>,如何让孩子按时完成作业
+                    </div>
+                    <div class="center_top_right">已回答</div>
+                </div>
+
+                <div class="center_top">
+                    <div class="center_top_text">
+                        孩子做<span class="span">作业拖拉</span>,如何让孩子按时完成作业?
+                    </div>
+                    <div class="center_top_right">已回答</div>
+                </div>
+
+                <div class="center_top">
+                    <div class="center_top_text">
+                        孩子做<span class="span">作业</span>拖拉,如何让孩子按时完成作业孩子做作业<span class="span">拖拉</span>,如何让孩子按时完成作业
+                    </div>
+                    <div class="center_top_right">已回答</div>
+                </div>
+
+                <div class="center_top">
+                    <div class="center_top_text">
+                        孩子做<span class="span">作业拖拉</span>,如何让孩子按时完成作业?
+                    </div>
+                    <div class="center_top_right">已回答</div>
+                </div>
+
+                <div class="center_top">
+                    <div class="center_top_text">
+                        孩子做<span class="span">作业</span>拖拉,如何让孩子按时完成作业孩子做作业<span class="span">拖拉</span>,如何让孩子按时完成作业
+                    </div>
+                    <div class="center_top_right">已回答</div>
+                </div>
+
+                <div class="center_top">
+                    <div class="center_top_text">
+                        孩子做<span class="span">作业拖拉</span>,如何让孩子按时完成作业?
+                    </div>
+                    <div class="center_top_right">已回答</div>
+                </div>
+
+                <div class="center_top">
+                    <div class="center_top_text">
+                        孩子做<span class="span">作业</span>拖拉,如何让孩子按时完成作业孩子做作业<span class="span">拖拉</span>,如何让孩子按时完成作业
+                    </div>
+                    <div class="center_top_right">已回答</div>
+                </div>
+
+                <div class="center_top">
+                    <div class="center_top_text">
+                        孩子做<span class="span">作业拖拉</span>,如何让孩子按时完成作业?
+                    </div>
+                    <div class="center_top_right">已回答</div>
+                </div>
+
+                <div class="center_top">
+                    <div class="center_top_text">
+                        孩子做<span class="span">作业</span>拖拉,如何让孩子按时完成作业孩子做作业<span class="span">拖拉</span>,如何让孩子按时完成作业
+                    </div>
+                    <div class="center_top_right">已回答</div>
+                </div>
+            </div>
+        </div>
+        <!-- 二维码 -->
+        <div id="disappare" style="display: none;">
+            <div>
+                <div class="popup-class">
+                    <div class="popup-head">
+                        <div class="popup-head-title">问题已发送至锦囊专家团</div>
+                        <div class="popup-head-concent">请留意自牧家长公众号消息提醒</div>
+                    </div>
+                    <div class="popup-body">
+                        <img class="qrimg" src="../../img/QRcode.png" alt="">
+                        <div class="tips">长按识别二维码，关注自牧家长公众号</div>
+                    </div>
+                </div>
+                <div id="closeOr" class="close-button">
+                    <img class="close-button-img" src="../../img/close.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script type="text/javascript">
+    $(function () {
+        $("#clickbutton").click(function () {
+            $("#disappare").show();
+        });
+        $("#closeOr").click(function () {
+            $("#disappare").hide()
+        });
+        $(".bottom_2").click(function () {
+            $(".bottom").hide()
+        });
+        // $("#on_input").focus(function(){
+        //     let str = $('#on_input').val()
+        //     if ($.trim(str).length!=0){
+                
+        //     }
+        // });
+         // 回车触发事件
+        $('#on_input').keydown(function (val) {
+            // console.log(val,'获取按键的信息');
+        let str = $('#on_input').val()
+
+        if (val  && val.key === "Enter" && $.trim(str)!= '') {
+            // console.log($.trim(str),"$.trim(str)",$.trim(str).length==0,$.trim(str).length)
+            // if ($.trim(str).length==0){
+            //     console.log("不执行")
+            //     return false;
+            // } else{
+            //     console.log("执行")
+            // }
+            // $('#on_input').blur();
+            // let str = $('#on_input').val()
+            // console.log(str);
+            // // 赋值
+            // $('#text_content1').html(str)
+            // $('#text_content2').html(str)
+            // $('#text_content3').html(str)
+            // $('#on_input').val('')
+            // str = ''
+            $('.top_right_text').css({
+                color: '#0EC286'
+            })
+            $('.center').css({
+                display:'block'
+            })
+            }
+        })
+        $('.top_right').click(function(){
+            $('#disappare').css({
+                display:'flex'
+            })
+        })
+    })
+</script>
