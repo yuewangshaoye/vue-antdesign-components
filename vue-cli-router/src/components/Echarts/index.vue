@@ -36,11 +36,12 @@ export default {
     },
   },
   mounted() {
-    this.myEcharts();
+    // this.myEcharts();
+  
+   this.$nextTick(()=>{
+        this.myEcharts();
+    })
   },
-  //  this.$nextTick(()=>{
-  //       this.myEcharts();
-  //   })
 };
 </script>
 <style  scoped>
