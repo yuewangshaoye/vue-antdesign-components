@@ -9,6 +9,7 @@ import Echarts from '@/components/Echarts/index.vue'
 import EchartsK from '@/components/Echarts/test1'
 import Count from '@/components/Count/index'
 import Slot from '@/components/Slot/index'
+import momentjs from '@/components/moment.js/index'
 
 
 Vue.use(Router)
@@ -60,6 +61,11 @@ export default new Router({
       path: '/Slot',
       name: 'Slot',
       component: Slot
+    },
+    {
+      path: '/momentjs',
+      name: 'momentjs',
+      component: momentjs
     },
   ]
 });

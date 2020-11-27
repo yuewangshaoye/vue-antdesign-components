@@ -12,10 +12,11 @@
     "test": "npm run unit && npm run e2e",
     "build": "node build/build.js"
   },
-  "dependencies": { 
+  "dependencies": {
     "ant-design": "^1.0.0",
     "ant-design-vue": "^1.7.1",
     "axios": "^0.21.0",
+    "moment": "^2.29.1",
     "vue": "^2.5.2",
     "vue-router": "^3.4.8",
     "vuex": "^3.5.1"
